@@ -14,6 +14,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
+Route::get('/posts', 'PostController@index')->name('posts.index');
 
 // Route::get('/posts/{id}/{author}', function ($id, $author) {
 // 	return "The post with id " . $id . " has author name " . $author ;
